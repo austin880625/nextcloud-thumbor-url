@@ -1,0 +1,17 @@
+{
+    "name": "austintin/nextcloud-thumbor-url",
+    "description": "Generate the signed thumbor url for images",
+    "type": "project",
+    "license": "AGPL",
+    "authors": [
+        {
+            "name": "Austin Chang"
+        }
+    ],
+    "require": {
+        "99designs/phumbor": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    }
+}
