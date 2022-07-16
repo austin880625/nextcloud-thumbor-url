@@ -1,7 +1,25 @@
 # Thumbor Url
+
+Get the signed Thumbor image url on Nextcloud.
+
 Place this app in **nextcloud/apps/**
 
+Click the file action:
+
+![檔案下拉選單新增的 Get Thumbor Url 選項](https://img.austint.in/DpSLIfYdhSCull-Cpv0AXOKhzXw=/800x0/thumbor-sample/thumborurl-menu.png)
+
+Enter the Thumbor filters like unsafe url:
+
+![輸入 Thumbor 圖片處理選項](https://img.austint.in/1Uaq5CDZmVm7KB1gpQaGjPMLJZo=/800x0/thumbor-sample/thumborurl-enter-filter.png)
+
+Get the signed url:
+
+![帶有 HMAC hash 的圖片 url](https://img.austint.in/p7WrYlm_FmH2MKJHJWw2LIbjZQs=/800x0/thumbor-sample/thumborurl-signed-url.png)
+
+
 ## Building the app
+
+**Warning: the build method below is not tested, so the vendor dependencies are kept and should not need any other steps to perform this building process**
 
 The app can be built by using the provided Makefile by running:
 
@@ -25,28 +43,3 @@ The make command will install or update Composer dependencies if a composer.json
 }
 ```
 
-
-## Publish to App Store
-
-First get an account for the [App Store](http://apps.nextcloud.com/) then run:
-
-    make && make appstore
-
-The archive is located in build/artifacts/appstore and can then be uploaded to the App Store.
-
-## Running tests
-You can use the provided Makefile to run all tests by using:
-
-    make test
-
-This will run the PHP unit and integration tests and if a package.json is present in the **js/** folder will execute **npm run test**
-
-Of course you can also install [PHPUnit](http://phpunit.de/getting-started.html) and use the configurations directly:
-
-    phpunit -c phpunit.xml
-
-or:
-
-    phpunit -c phpunit.integration.xml
-
-for integration tests
