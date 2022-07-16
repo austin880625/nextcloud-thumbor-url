@@ -2,6 +2,8 @@
 
 Get the signed Thumbor image url on Nextcloud.
 
+For use case can refer to (this post)[https://blog.austint.in/2022/07/16/thumbor-with-nextcloud.html]
+
 Place this app in **nextcloud/apps/**
 
 Click the file action:
